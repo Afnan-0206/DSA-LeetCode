@@ -46,25 +46,24 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comp
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms  
-**Memory:** 8.3 MB  
-**Submitted:** 2026-07-05T12:46:41.096Z  
+**Runtime:** 43 ms (beats 24.17%)  
+**Memory:** 14.1 MB (beats 81.68%)  
+**Submitted:** 2026-07-05T12:46:49.856Z  
 
 ```cpp
-class Solution {
+class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-       for(int i=0; i< nums.size();i++) {
-        for(int j = i+1; j < nums.size(); j++){
-            if (nums[i]+nums[j]== target){
-        }
-       }
-                return{i,j};
-            }
-    }
-       return{};
+    vector<int> twoSum(vector<int>& nums, int target) {
+       for(int i=0; i< nums.size();i++) {
+        for(int j = i+1; j < nums.size(); j++){
+            if (nums[i]+nums[j]== target){
+                return{i,j};
+            }
+        }
+       }
+       return{};
+    }
 };
-
 ```
 
 ---
